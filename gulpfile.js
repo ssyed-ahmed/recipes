@@ -19,3 +19,24 @@ gulp.task('styles', function () {
 		.pipe(plugins.concat('styles.css'))
 		.pipe(gulp.dest('src/assets/css'));
 })
+
+gulp.task('modernizr', function() {
+	gulp.src('/src/assets/**/*.scss')
+		.pipe(plugins.modernizr({
+			options: ['setClasses']
+		}))
+		.pipe(plugins.uglify())
+})
+
+gulp.task('watch', function() {
+	plugins.livereload.listen()
+	gulp.watch('src/assets/sass/**/*.scss', ['styles'])
+})
+
+gulp.task('build', function(done) {
+	runSequence('styles', 'modernizr', done)
+})
+
+gulp.task('default', function(done) {
+	runSequence('styles', 'modernizr', ['watch'], done)
+})
