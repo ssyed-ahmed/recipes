@@ -1227,12 +1227,31 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.c-navbar .brand {
+  width: 200px;
+  height: inherit;
+  display: inline-block;
+  color: white;
+  padding: 12px 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.c-navbar .brand .brand-logo {
+  padding-right: 10px;
+  vertical-align: inherit;
+}
+
+.c-navbar .brand:hover {
+  opacity: 0.5;
+}
+
 .c-navbar a {
   display: inline-block;
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none !important;
 }
 
