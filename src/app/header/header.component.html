@@ -26,16 +26,16 @@
     <!-- <div class="brand"><i class="fa fa-book brand-logo"></i>Recipe Book</div> -->
     <div class="brand">Recipe Book</div>
     <a><i class="fa fa-fw fa-home"></i>&nbsp; Home</a>
-    <a (click)="onSelect('recipes')"><i class="fas fa-utensils"></i>&nbsp; Recipes</a>
-    <a (click)="onSelect('shopping-list')"><i class="fa fa-fw fa-shopping-cart"></i>&nbsp; Shopping List</a>
+    <a routerLink="/recipes" routerLinkActive="active"><i class="fas fa-utensils"></i>&nbsp; Recipes</a>
+    <a routerLink="/shopping-list" routerLinkActive="active"><i class="fa fa-fw fa-shopping-cart"></i>&nbsp; Shopping List</a>
     <div class="dropdown">
         <button class="dropbtn">Manage 
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-        <a href="#">Save Data <i class="fa fa-save"></i></a>
-        <a href="#">Fetch Data <i class="fa fa-arrow-up"></i></a>
-        <a href="#">Delete Data <i class="fa fa-trash"></i></a>
+        <a style="cursor:pointer">Save Data <i class="fa fa-save"></i></a>
+        <a style="cursor:pointer">Fetch Data <i class="fa fa-arrow-up"></i></a>
+        <a style="cursor:pointer">Delete Data <i class="fa fa-trash"></i></a>
         </div>
     </div> 
 </div>

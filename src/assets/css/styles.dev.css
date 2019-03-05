@@ -1332,6 +1332,11 @@ h6 {
   float: right;
 }
 
+.c-navbar .active {
+  color: white;
+  background-color: red;
+}
+
 .c-footer {
   width: 100%;
   height: 200px;
