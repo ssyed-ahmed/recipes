@@ -23,16 +23,16 @@
 </nav> -->
 
 <div class="c-navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
+    <a (click)="onSelect('recipes')">Recipes</a>
+    <a (click)="onSelect('shopping-list')">Shopping List</a>
     <div class="dropdown">
-      <button class="dropbtn">Dropdown 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
+        <button class="dropbtn">Manage 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+        <a href="#">Save Data <i class="fa fa-save"></i></a>
+        <a href="#">Fetch Data <i class="fa fa-arrow-up"></i></a>
+        <a href="#">Delete Data <i class="fa fa-trash"></i></a>
+        </div>
     </div> 
-  </div>
+</div>
