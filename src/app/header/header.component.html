@@ -23,9 +23,11 @@
 </nav> -->
 
 <div class="c-navbar">
-    <div class="brand"><i class="fa fa-book brand-logo"></i>Recipe Book</div>
-    <a (click)="onSelect('recipes')">Recipes</a>
-    <a (click)="onSelect('shopping-list')">Shopping List</a>
+    <!-- <div class="brand"><i class="fa fa-book brand-logo"></i>Recipe Book</div> -->
+    <div class="brand">Recipe Book</div>
+    <a><i class="fa fa-fw fa-home"></i>&nbsp; Home</a>
+    <a (click)="onSelect('recipes')"><i class="fas fa-utensils"></i>&nbsp; Recipes</a>
+    <a (click)="onSelect('shopping-list')"><i class="fa fa-fw fa-shopping-cart"></i>&nbsp; Shopping List</a>
     <div class="dropdown">
         <button class="dropbtn">Manage 
             <i class="fa fa-caret-down"></i>

@@ -1313,6 +1313,33 @@ h6 {
   float: right;
 }
 
+.c-footer {
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 85px;
+}
+
+.c-footer span {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.c-footer a {
+  color: white;
+  display: block;
+  line-height: 28px;
+}
+
+.c-footer a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
 /* ==========================================================================
    #WIDTHS
    ========================================================================== */
