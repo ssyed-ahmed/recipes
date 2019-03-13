@@ -16,7 +16,10 @@
 		line-height: 28px;
 		&:hover {
 			text-decoration: none;
-			font-weight: bold;
+			color: white;
+		}
+		&.active {
+			text-decoration: none;
 			color: white;
 		}
 	}
