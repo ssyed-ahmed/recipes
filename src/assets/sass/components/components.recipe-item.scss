@@ -3,3 +3,8 @@
 		min-width: 180px;
 	}
 }
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+	border: 1px solid red;
+}
