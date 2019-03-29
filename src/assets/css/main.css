@@ -1318,6 +1318,13 @@ h6 {
   background-color: red;
 }
 
+.c-navbar .auth-register {
+  position: absolute;
+  right: 125px;
+  text-align: right;
+  display: inline-block;
+}
+
 .c-footer {
   width: 100%;
   height: 200px;
