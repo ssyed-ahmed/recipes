@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { Router } from '@angular/router';
 import { DataStorageService } from "../shared/data-storage.service";
 import { Response } from "@angular/http";
+import { AuthService } from "../auth/auth.service";
 
 @Component({
     selector: 'app-header',
@@ -9,7 +10,9 @@ import { Response } from "@angular/http";
 })
 export class HeaderComponent {
 
-    constructor(private router: Router, private dataStorageService: DataStorageService) {}
+    constructor(private router: Router, 
+        private dataStorageService: DataStorageService,
+        private authService: AuthService) {}
 
     onBrandClick() {
         this.router.navigate(['home'])
@@ -28,5 +31,11 @@ export class HeaderComponent {
 
     onFetchData() {
         this.dataStorageService.fetchRecipes()            
+    }
+
+    onLogout() {
+        console.log('logout clicked');
+        
+        this.authService.logout()
     }
 }

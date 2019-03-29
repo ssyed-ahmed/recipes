@@ -81,12 +81,16 @@
 	}
 	.auth-register {
 		position: absolute;
-		right: 125px;;
+		right: 0;;
 		text-align: right;
 		display: inline-block;
 	}
 	.auth-login {
 		@extend .auth-register;
-		right: 250px;
+		right: 120px;
+	}
+	.auth-logout {
+		@extend .auth-register;
+		right: 120px;
 	}
 }

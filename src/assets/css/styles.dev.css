@@ -1337,15 +1337,19 @@ h6 {
   background-color: red;
 }
 
-.c-navbar .auth-register, .c-navbar .auth-login {
+.c-navbar .auth-register, .c-navbar .auth-login, .c-navbar .auth-logout {
   position: absolute;
-  right: 125px;
+  right: 0;
   text-align: right;
   display: inline-block;
 }
 
 .c-navbar .auth-login {
-  right: 250px;
+  right: 120px;
+}
+
+.c-navbar .auth-logout {
+  right: 120px;
 }
 
 .c-footer {
