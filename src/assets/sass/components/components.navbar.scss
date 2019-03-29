@@ -85,4 +85,8 @@
 		text-align: right;
 		display: inline-block;
 	}
+	.auth-login {
+		@extend .auth-register;
+		right: 250px;
+	}
 }

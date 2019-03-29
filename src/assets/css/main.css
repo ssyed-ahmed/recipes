@@ -1318,11 +1318,15 @@ h6 {
   background-color: red;
 }
 
-.c-navbar .auth-register {
+.c-navbar .auth-register, .c-navbar .auth-login {
   position: absolute;
   right: 125px;
   text-align: right;
   display: inline-block;
+}
+
+.c-navbar .auth-login {
+  right: 250px;
 }
 
 .c-footer {
